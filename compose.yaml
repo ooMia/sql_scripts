@@ -1,0 +1,17 @@
+services:
+  # https://hub.docker.com/r/microsoft/mssql-server
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    environment: 
+      ACCEPT_EULA: ${ACCEPT_EULA:-Y}
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:?error}
+      MSSQL_PID: ${MSSQL_PID:-Developer}
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql-data:/var/opt/mssql
+
+volumes:
+  mssql-data:
+   
