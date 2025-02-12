@@ -1,3 +1,12 @@
+# Get Started
+
+```bash
+brew install sqlcmd
+
+# run container
+docker compose up -d
+```
+
 # SQL 스크립트
 
 MSSQL, MySQL, Oracle, PostgreSQL 및 Greenplum에 유용한 SQL 스크립트입니다. 이는 수년간의 사용과 개선을 기반으로 합니다. 데이터 분석가, 소프트웨어 테스터 및 기타 데이터베이스 전문가가 사용하는 일반적인 스크립트입니다.
